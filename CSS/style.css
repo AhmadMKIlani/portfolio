@@ -22,10 +22,60 @@ h3{
 }
 
 h2{
-	font-family: cursive;;
+	font-family: cursive;
 }
-i{
+.fas, .fa-bars{
 	display: none !important;
+}
+
+
+
+/* this is the new intor css */
+.intro-row{
+	text-align: center;
+	height:710px;
+}
+
+.intro-img img{
+
+    background: linear-gradient(to right, #D6A4A4, #a0add0); 
+	margin-top:90px;
+	width:220px;
+	border-radius: 20%;
+	box-shadow: 5px 5px 50px 30px #a0add0;
+}
+
+.intro-text{
+	height: 30px;
+}
+.col-lg-12 button{
+	background-color: rgba(160, 173, 208, 0.2);
+	width:70%;
+	font-size:30px;
+	font-weight: 400;
+	border-radius: 10px;
+	border:none;
+}
+
+.col-lg-12 button:hover{
+	background-color: rgba(160, 173, 208);
+	font-size:40px;
+	font-weight: 500;
+}
+
+/* end of new intro */
+
+
+.html5{
+	color:rgb(221,75,37);
+}
+
+.css3{
+	color:rgb(37,75,221);
+}
+
+.my-bootstrap{
+	color:rgb(134,18,251);
 }
 
 .section1{
@@ -36,7 +86,7 @@ i{
 
 .container1{
 	height: 70px;
-	background-color:rgb(21, 217, 183);
+	background-color:rgba(21, 217, 183,0.4);
 	font-size: 16px;
 	line-height: 2;
 	position: fixed;
@@ -64,42 +114,11 @@ i{
 }
 
 .container1 ul li a{
-	color: white;
+	color: black;
 	text-decoration: none;
 	padding: 14px 16px;
 	font-size: 20px;
 	line-height: 3;
-}
-
-.first-container{
-	display: flex;
-	justify-content: flex-end;
-	margin-top: 150px;
-}
-
-
-	
-
-.my-intro img{
-	width: 300px;
-	height: 300px;
-	margin-top: 30px;
-	margin-right: 411px;
-	position: relative;
-	z-index: 1;
-	border-radius: 10px;
-}
-
-
-.para-f-c{
-	width: 900px;
-	height: 60px;
-	background-color:rgb(21, 217, 183) ;
-	font-size: 30px;
-	
-}
-.para-f-c p, h2, h1{
-	margin-left: 30px;
 }
 
 .first-text{
@@ -110,7 +129,7 @@ i{
 }
 
 .section2{
-	margin-top:-60px;
+	margin-top:0;
 	display: flex;
 	flex-direction: column;
 		
@@ -138,7 +157,153 @@ i{
 	margin: 4px;
 }
 
-.who-section{
+
+.examples h2{
+	margin-bottom: 40px;
+}
+
+
+/* new bar */
+.big-container{
+	display:flex;
+	justify-content: space-around;
+	margin-top:65px;
+}
+
+.container-pro .prog
+{
+  margin-left: 20px;	
+  position:relative;
+  width:200px;
+  display:inline-block;
+  padding: 20px;
+}
+.container-pro .my-card
+{
+  position:relative;
+  width:250px;
+  background:linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:300px;
+  border-radius:4px;
+  text-align:center;
+  transition:0.5s;
+}
+.container-pro .my-card:hover
+{
+  transform:translateY(-10px);
+  box-shadow:0 15px 35px rgba(0,0,0,.5);
+}
+.container-pro .my-card:before
+{
+  content:'';
+  position:absolute;
+  top:0;
+  left:-50%;
+  width:100%;
+  height:100%;
+  background:rgba(255,255,255,.03);
+  pointer-events:none;
+  z-index:1;
+}
+.percent
+{
+  position:relative;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  box-shadow: inset 0 0 50px #000;
+  background:#222;
+  z-index:1000;
+}
+.percent .num
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+}
+.percent .num h2
+{
+  color:#777;
+  font-weight:700;
+  font-size:40px;
+  transition:0.5s;
+}
+.my-card:hover .percent .num h2
+{
+  color:#fff;
+  font-size:60px;
+}
+
+.percent .num h2 span
+{
+  color:#777;
+  font-size:24px;
+  transition:0.5s;
+}
+.my-card:hover .percent .num h2 span
+{
+  color:#fff;
+}
+
+.text
+{
+  position:relative;
+  color:#777;
+  margin-top:20px;
+  font-weight:700;
+  font-size:18px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  transition:0.5s;
+}
+.my-card:hover .text
+{
+  color:#fff;
+}
+
+svg
+{
+  position:relative;
+  width:150px;
+  height:150px;
+  z-index:1000;
+}
+svg circle
+{
+  width:100%;
+  height:100%;
+  fill:none;
+  stroke:#191919;
+  stroke-width:10;
+  stroke-linecap:round;
+  transform:translate(5px,5px);
+}
+svg circle:nth-child(2)
+{
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+}
+.my-card:nth-child(1) svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 90) / 100);
+  stroke:#00ff43;
+}
+
+/* end new bar */
+
+
+
+
+/* .who-section{
 	display: flex;
 	margin-top: 125px;
 }
@@ -175,7 +340,7 @@ i{
 .who-body p{
 	width: 300px;
 	margin-left: 530px;
-}
+} */
 
 .examples{
 	text-align: center;
@@ -189,7 +354,6 @@ i{
 }
 
 .examples a{
-	margin-top:7%;
 	text-decoration: none;
 }
 
@@ -211,7 +375,6 @@ i{
 }
 .card {
     border-radius: 1rem;
-    box-shadow: 0px -10px 0px rgb(21,217,183)
 }
 
 @media(max-width:767px) {
@@ -236,7 +399,7 @@ i{
     padding: 1rem 2rem;
     font-size: 0.8rem;
     color: rgb(82, 81, 81);
-    line-height: 1.4rem
+    line-height: 1.4rem;
 }
 #name {
     font-size: 0.8rem;
@@ -283,6 +446,7 @@ footer .form-control {
 }
 
 
+
 @media (max-width: 1400px){
     .my-intro img{
 		margin-right:200px;
@@ -294,9 +458,9 @@ footer .form-control {
 		margin-right: auto;
 	}
 
-	.who-section{
+	/* .who-section{
 		margin-right:auto;
-	}
+	} */
 
 }
 
@@ -309,7 +473,7 @@ footer .form-control {
 		display: none;
 	}
 
-	.who-text{
+	/* .who-text{
 		margin-left: 0;
 	}
 	.who-section img{
@@ -317,7 +481,7 @@ footer .form-control {
 	}
 	.who-section{
 		margin-left: 0;
-	}
+	} */
 
 	.fa, .fas{
 		margin:auto 50px;
@@ -336,7 +500,7 @@ footer .form-control {
 
 @media (max-width: 768px){
     
-	.who-section{
+	/* .who-section{
 		margin-left: 0;
 	}
 	.who-text{
@@ -344,7 +508,7 @@ footer .form-control {
 	}
 	.who-section img{
 		margin-left:38px;
-	}
+	} */
    .first-text{
 	   margin-right: -137px;
    }
@@ -366,9 +530,25 @@ footer .form-control {
 		.container1 ul li a{
 			font-size: 12px;
 		}
-		.who-section{
+		/* .who-section{
 			display: block;
-		}
+		} */
+		
+     .row *{
+	padding-left: 0;
+	padding-right:0;
+	text-align: center;
+     }
+
+	 .fa-bars {
+		display: block !important;
+	}
+	 .fa, .fas{
+		margin:auto 50px;
+		text-align: end;
+		font-size: 20px;
+	}
+
 	}
 
 
@@ -398,7 +578,7 @@ footer .form-control {
 			text-align: center;
 		}
 		/*--------------------------------Who-section---------------*/
-		.who-section{
+		/* .who-section{
 			display: flex;
 			flex-direction: column;
 			margin-top: 0px;
@@ -452,6 +632,6 @@ footer .form-control {
 			padding: 0;
 			line-height: 2;
 			text-align: center;
-		}
+		} */
 		/*-----------------------------------------------------------*/
 		}
